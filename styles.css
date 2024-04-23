@@ -1,0 +1,186 @@
+/* estilos.css */
+
+body {
+    
+    background-image: url('imagem/fundo2.JPG'); /* Caminho para sua imagem de fundo */
+    background-color: rgba(255, 255, 255, 0.8); /* Cor de fundo quase transparente */
+    background-blend-mode: overlay; /* Mescla a imagem de fundo com a cor de fundo */
+    background-size: cover; /* Ajusta a imagem para cobrir toda a área do corpo */
+    background-position: center; /* Centraliza a imagem */
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+  
+nav {
+    background: linear-gradient(to right, #42bae2, #b9569c); /* Degrade azul para roxo */
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+  
+nav ul {
+    list-style: none;
+    margin: 0 auto;
+    padding: 0;
+    display: inline-block;
+}
+  
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+  
+nav ul li a  {
+    color: #fff;
+    text-decoration: none;
+}
+  
+nav ul li a:hover {
+    text-decoration: underline;
+}
+  
+nav ul li a i {
+    color: #fff; /* Cor dos ícones */
+    font-size: 24px; /* Tamanho dos ícones */
+    margin-left: 10px; /* Espaçamento entre os ícones e os links */
+  }
+
+  
+header {
+    padding: 20px;
+    text-align: center;
+}
+  
+/* Estilos para a seção "Sobre Nós" */
+.sobre-container {
+  display: flex;
+  justify-content: center; /* Centraliza horizontalmente */
+  align-items: center; /* Centraliza verticalmente */
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.texto-sobre {
+  flex: 1; /* Ocupa o restante do espaço disponível */
+  padding: 0 40px; /* Adiciona um espaço interno à esquerda e à direita */
+  text-align: center; /* Centraliza o texto */
+}
+
+h2 {
+  text-shadow: 2px 2px 4px rgb(255, 249, 249); /* Adiciona uma sombra suave ao título */
+  font-family: 'Roboto', sans-serif;
+  font-size: 35px;
+  font-weight: bold; /* Utilize "bold" em vez de "bolder" para uma fonte mais forte */
+  color: #130303;
+  margin-bottom: 10px;
+}
+
+.texto-sobre p {
+  text-shadow: 2px 2px 4px rgb(255, 249, 249); /* Adiciona uma sombra suave ao título */
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  line-height: 1.4;
+  color:color(srgb rgb(24, 2, 2) rgb(33, 34, 33) blue);
+  margin-bottom: 10px;
+  text-align: justify; /* Justifica o texto */
+}
+
+.imagem-sobre img {
+  width: 300px; /* Define a largura da imagem */
+  height: auto; /* Mantém a proporção da imagem */
+  margin-top: 70px; /* Ajusta o espaço entre o texto e a imagem */
+}
+
+  
+.eventos-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+  
+.evento {
+    border: 1px solid #7430ce;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 10px;
+    width: 300px;
+}
+  
+.evento p {
+    font-family: 'Roboto',sans-serif;
+    margin-bottom: 0;
+    text-shadow: 4px 4px 4px rgba(246, 244, 247, 0.966); /* Adiciona uma sombra de 2px para direita e para baixo, com um desfoque de 4px e cor preta com 50% de opacidade */
+}
+  
+  /* Estilo para imagens dentro da div de evento */
+  .evento img {
+    width: 100%;
+    height: auto;
+    max-width: 300px; /* Define a largura máxima da imagem */
+    max-height: 300px; /* Define a altura máxima da imagem */
+    object-fit: cover; /* Garante que todas as imagens tenham o mesmo tamanho */
+}
+
+.confirmar-presenca {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+    margin-top: 10px;
+  }
+  
+  .confirmar-presenca:hover {
+    background-color: #0056b3;
+  }
+  
+
+
+.sociais-container {
+    text-align: center; /* Centraliza os elementos horizontalmente */
+    padding-top: 20px; /* Adiciona espaçamento superior */
+    padding-bottom: 100px; /* Adiciona espaço na parte inferior da seção */
+    
+}
+  
+.redes-sociais {
+    margin-top: 20px; /* Adiciona espaçamento superior */
+    text-shadow: 2px 2px 4px rgb(255, 249, 249); /* Adiciona uma sombra suave ao título */
+    font-family: 'Roboto', sans-serif;
+}
+  
+.rede-social {
+    text-shadow: 2px 2px 4px rgb(255, 249, 249); /* Adiciona uma sombra suave ao título */
+    font-family: 'Roboto', sans-serif;
+    display: inline-block; /* Exibe as divs lado a lado */
+    margin: 0 30px; /* Adiciona margem entre as divs de rede social */
+    width: 200px; /* Aumenta a largura das divs */
+    height: 200px; /* Aumenta a altura das divs */
+}
+
+.icone-social {
+    width: 150px; /* Defina a largura desejada para os ícones */
+    height: 150px; /* Defina a altura desejada para os ícones */
+    border-radius: 50%; /* Define o border-radius como 50% para tornar os ícones redondos */
+    border: 2px solid #ccc; /* Adiciona uma borda para destacar os ícones */
+}
+  
+.icone-social:hover {
+    border-color: #007bff; /* Muda a cor da borda ao passar o mouse sobre os ícones */
+}
+
+
+/* Estilos para o rodapé */
+footer {
+    position: fixed; /* Define a posição fixa */
+    bottom: 0; /* Alinha o rodapé na parte inferior da janela do navegador */
+    width: 100%; /* Define a largura do rodapé para ocupar toda a largura da janela */
+    background: linear-gradient(to right, #42bae2, #b9569c); /* Degrade azul para roxo */
+    color: #fff; /* Cor do texto do rodapé */
+    text-align: center; /* Centraliza o texto horizontalmente */
+    padding: 1px 0; /* Adiciona espaçamento interno ao redor do conteúdo do rodapé */
+  }
